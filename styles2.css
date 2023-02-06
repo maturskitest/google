@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap');
+:root {
+    --lighter-gray: hsl(210, 17%, 98%);
+    --light-gray: hsl(0, 0%, 95%);
+    --dark-gray: hsl(220, 9%, 87%);
+    --darker-gray: hsl(210, 4%, 46%);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+*, * > * {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+nav {
+    text-align: right;
+    height: 30px;
+    padding: 20px;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+}
+nav a + a {
+    margin-left: 20px;
+}
+nav a:hover {
+    color: blue;
+}
+
+main, .wrapper {
+    width: 100%;
+}
+main {
+    display: table;
+    text-align: center;
+}
+
+.wrap-google {
+  position: relative;
+  width: 100%;
+  height: calc(100vh - 140px);
+}
+
+.wrapper {
+    display: table-cell;
+    vertical-align: middle;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.brand-wrapper {
+    position: relative;
+    width: 290px;
+    margin: 0 auto;
+}
+.google-brand {
+    height: 7rem;
+    margin-bottom: 20px;
+}
+#images-label {
+    position: absolute;
+    font-size: 1.2rem;
+    color: #4285f4;
+    top: 5.5rem;
+    right: 5px;
+}
+.google-search-field {
+    border: 1px solid var(--dark-gray);
+    border-radius: 1.75rem;
+    width: 600px;
+    height: 3.5rem;
+    padding: 20px 50px;
+    margin-bottom: 30px;
+}
+@media (max-width: 800px) {
+    .google-search-field {
+        width: 80%;
+    }
+}
+@media (max-width: 600px) {
+    .google-search-field {
+        width: 90%;
+    }
+} 
+.google-search-field:hover {
+    border: none;
+    box-shadow: 1px 1px 6px 1px var(--dark-gray);
+}
+.google-search-field:focus {
+    outline: none;
+}
+.google-search .search-label {
+    position: relative;
+}
+.google-search .search-label .magnifying-glass-icon {
+    position: absolute;
+    margin-top: 0.85rem;
+    left: 16px;
+    height: 1.8rem;
+    width: 1.8rem;
+    opacity: 0.3;
+}
+.google-search .search-label .microphone-icon {
+    position: absolute;
+    margin-top: 0.85rem;
+    right: 16px;
+    height: 1.8rem;
+    width: 1.8rem;
+}
+.google-search-buttons input {
+    border: 1px solid white;
+    border-bottom: 2px solid white;
+    border-radius: 4px;
+    background-color: var(--lighter-gray);
+    margin: 0 5px;
+    padding: 10px 15px;
+    font-family: inherit;
+}
+.google-search-buttons input:hover {
+    border: 1px solid var(--dark-gray);
+    border-bottom: 2px solid var(--dark-gray);
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: var(--light-gray);
+    padding: 20px;
+    justify-content: space-between;
+}
+footer > * a {
+    text-decoration: none;
+    color: var(--darker-gray);
+    margin: 0 15px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+.icons {
+    display: none;
+}
+
+pre {
+  background-image: url('serbian-flag.png');
+  background-size: contain;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
